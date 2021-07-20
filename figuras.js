@@ -46,3 +46,27 @@ const calcularAreaTriangulo =()=>{
 }
 
 document.getElementById("areaTriangulo").onclick = calcularAreaTriangulo;
+
+
+
+const calcularDiametroCirculo = ()=>{
+  radio = parseFloat(document.getElementById("radioCirculo").value)
+  alert(diametroCirculo(radio));
+}
+
+document.getElementById("diametroBoton").onclick = calcularDiametroCirculo;
+
+const calcularPerimetroCirculo = ()=>{
+  radio = parseFloat(document.getElementById("radioCirculo").value)
+  alert(perimetroCirculo(radio));
+}
+
+document.getElementById("perimetroBoton").onclick = calcularPerimetroCirculo;
+
+const calcularAreaCirculo = ()=>{
+  radio = parseFloat(document.getElementById("radioCirculo").value)
+  console.log(radio);
+  alert(areaCirculo(radio));
+}
+
+document.getElementById("areaBoton").onclick = calcularAreaCirculo;
