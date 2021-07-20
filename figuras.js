@@ -30,29 +30,19 @@ document.getElementById("perimetroCuadrado").onclick =
   calcularPerimetroCuadrado;
 document.getElementById("areaCuadrado").onclick = calcularAreaCuadrado;
 
-//Solución del reto:
+const calcularPerimetroTriangulo =()=>{
+  const lado1 = parseInt(document.getElementById("inputTriangulolado1").value)
+  const lado2 = parseInt(document.getElementById("inputTriangulolado2").value)
+  const base = parseInt(document.getElementById("inputTrianguloBase").value)
+  alert(perimetroTriangulo(lado1, lado2, base));
+}
 
-// const calcularAlturaIsosceles = (lado1, lado2, lado3) => {
-//   //validar que dos lados sean iguales
-//   if (lado1 === lado2 && lado1 === lado3) {
-//     alert("Es un triángolo Equilatero");
-//   } else if (lado1 === lado2 || lado1 === lado3 || lado2 === lado3) {
-//     if (lado1 === lado2) {
-//       var a = lado1;
-//       var b = lado3;
-//     } else if (lado1 === lado3) {
-//       var a = lado1;
-//       var b = lado2;
-//     } else {
-//       var a = lado2;
-//       var b = lado1;
-//     }
-//     var altura = Math.sqrt(a * a - (b * b) / 4);
-//   } else {
-//     alert("No es un tríangulo isósceles");
-//   }
+document.getElementById("perimetroTriangulo").onclick = calcularPerimetroTriangulo;
 
-//   return altura;
-// };
+const calcularAreaTriangulo =()=>{
+    const altura = parseInt(document.getElementById("inputTrianguloBasePerimetro").value)
+  const base = parseInt(document.getElementById("inputTrianguloAlturaPerimetro").value)
+  alert(areaTriangulo(base, altura));
+}
 
-// calcularAlturaIsosceles(4, 4, 7);
+document.getElementById("areaTriangulo").onclick = calcularAreaTriangulo;

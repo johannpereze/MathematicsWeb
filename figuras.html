@@ -14,16 +14,37 @@
     <section>
       <h2>Calcula el área y perímetro de un cuadrado</h2>
       <form action="">
-        <label for="inputCuadrado"></label>Escribe cuanto mide cada lado de tu
-        cuadrado:
+        <label for="inputCuadrado"
+          >Escribe cuanto mide cada lado de tu cuadrado:</label
+        >
         <input id="inputCuadrado" type="number" />
         <button id="perimetroCuadrado" type="button">
           Cacular el perímetro
         </button>
         <button id="areaCuadrado" type="button">Calcular el área</button>
       </form>
-      <h3>Resultados:</h3>
-      
+      <h2>Calcula el perímetro de un triángulo</h2>
+      <form action="">
+        <label for="inputTriangulolado1">Medida lado 1:</label>
+        <input type="number" name="" id="inputTriangulolado1" />
+        <label for="inputTriangulolado2">Medida lado 2:</label>
+        <input type="number" name="" id="inputTriangulolado2" />
+        <label for="inputTrianguloBase">Medida base:</label>
+        <input type="number" name="" id="inputTrianguloBase" />
+        <input
+          type="button"
+          value="Calcular el perímetro"
+          id="perimetroTriangulo"
+        />
+      </form>
+      <h2>Calcula el área de un triángulo</h2>
+      <form action="">
+        <label for="inputTrianguloBasePerimetro">Medida de la base:</label>
+        <input type="number" name="" id="inputTrianguloBasePerimetro" />
+        <label for="inputTrianguloAlturaPerimetro">Medida de la altura:</label>
+        <input type="number" name="" id="inputTrianguloAlturaPerimetro" />
+        <input type="button" value="Calcular el área" id="areaTriangulo" />
+      </form>
     </section>
     <script src="./figuras.js"></script>
   </body>
