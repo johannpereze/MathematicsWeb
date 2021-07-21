@@ -9,3 +9,16 @@ const calcularPromedio = (lista) => {
 };
 
 // calcularPromedio(lista1);
+
+//video de shacha
+
+const productos = [
+  { id: "ge5yt54", nombre: "camiseta", precio: 500 },
+  { id: "gf435g5", nombre: "zapatillas", precio: 2000 },
+  { id: "54yh545", nombre: "pantalón", precio: 1500 },
+];
+
+const productosBaratos = productos.filter(productos => productos.precio < 1000);
+
+
+console.log(productosBaratos);
